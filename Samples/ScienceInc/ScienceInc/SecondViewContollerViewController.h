@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SecondViewContollerViewController.h
 //  ScienceInc
 //
 //  Created by DV Reddy on 15/08/15.
@@ -7,12 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "WebserviceHelperClass.h"
 
-@interface ViewController : UIViewController<WebserviceDelegate>{
+@interface SecondViewContollerViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>{
 
-    WebserviceHelperClass *webserviceHelper;
 }
+@property (weak, nonatomic) IBOutlet UITableView *tableViewFirst;
 @property (nonatomic,strong) NSMutableArray * mainCategoryNames;
 @property (nonatomic,strong) NSMutableArray * innerCategoryList;
 
@@ -21,6 +20,4 @@
 @property (nonatomic,strong) NSMutableArray * categoryListThree;
 @property (nonatomic,strong) NSMutableArray * categoryListFour;
 @property (nonatomic,strong) NSMutableArray * categoryListFive;
-
 @end
-
