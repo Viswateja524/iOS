@@ -1,0 +1,17 @@
+## [V0.0.4](https://github.com/Wasappli/WACoreDataSpotlight/releases/tag/0.0.4)
+
+### Fixes
+- Fixed an issue with cocoapods
+
+## [V0.0.3](https://github.com/Wasappli/WACoreDataSpotlight/releases/tag/0.0.3)
+
+### Fixes
+- Use an expiration date builder block to define indexed items expiration date more precisely
+- Added the `shouldIndexObjectBlock ` on mapping to allow not to index some objects if there are in a transient mode. For example: a booking not finalized.
+
+## [V0.0.2](https://github.com/Wasappli/WACoreDataSpotlight/releases/tag/0.0.2)
+
+### Fixes
+- Fixed an infinited loop on `indexExistingObjects:`
+- Added a new method to refresh an object indexing (after an image download for example) (`updateIndexingForObject:`)
+- Update the index on `object context did save notification` instead of `objects did change`
